@@ -1,0 +1,8 @@
+{
+  "version": "0.0.0",
+  "name": "Test123.Web",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.8.2"
+  }
+}

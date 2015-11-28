@@ -1,0 +1,13 @@
+{
+  "defaultAssembly": "Test123.NMemory",
+    "components": [
+        {
+            "type": "Test123.NMemory.Impl+Database",
+            "services": [
+                {
+                    "type": "Test123.IHelloPersistency, Test123.Fx"
+                }
+            ]
+        }
+    ]
+}
