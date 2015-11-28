@@ -37,6 +37,39 @@
     <DocumentationFile>bin\Release\Test123.MUIApp.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.fs" />
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Page1.xaml" />
+    <Compile Include="Page1.xaml.fs" />
+    <Compile Include="MainViewModel.fs" />
+    <Resource Include="ApplicationResources.xaml" />
+    <Resource Include="MainView.xaml" />
+    <Compile Include="MainView.xaml.fs" />
+    <Resource Include="MainWindow.xaml" />
+    <Compile Include="MainWindow.xaml.fs" />
+    <Resource Include="App.xaml" />
+    <Compile Include="App.fs" />
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Test123\Test123.fsproj">
+      <Name>Test123</Name>
+      <Project>{683ba6de-01dc-4a1d-bc66-407b6baff78e}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
   </PropertyGroup>

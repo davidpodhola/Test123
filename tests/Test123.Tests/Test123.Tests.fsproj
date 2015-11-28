@@ -6,6 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e662ac56-9726-4e6e-ab8e-a7bb4d4d4fe1</ProjectGuid>
+    <ProjectGuid>14f86e77-dd77-498e-b0f8-55b626863da7</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Test123.Tests</RootNamespace>
     <AssemblyName>Test123.Tests</AssemblyName>
@@ -95,6 +96,20 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
+  <ItemGroup>
+    <Compile Include="Tests.fs" />
+    <None Include="paket.references" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\..\src\Test123\Test123.fsproj">
       <Name>Test123</Name>
       <Project>{7e90d6ce-a10b-4858-a5bc-41df7250cbca}</Project>
@@ -112,6 +127,14 @@
       </ItemGroup>
     </When>
   </Choose>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Project="..\..\.paket\paket.targets" />
   <ItemGroup>
     <Reference Include="nunit.framework">
       <HintPath>..\..\packages\NUnit\lib\nunit.framework.dll</HintPath>

@@ -55,6 +55,7 @@
     <ProjectReference Include="..\..\src\Test123\Test123.fsproj">
       <Name>Test123</Name>
       <Project>{73d8a58d-479d-4f25-bd7e-475483faa545}</Project>
+      <Project>{683ba6de-01dc-4a1d-bc66-407b6baff78e}</Project>
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>

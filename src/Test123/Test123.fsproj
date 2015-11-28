@@ -6,6 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>73d8a58d-479d-4f25-bd7e-475483faa545</ProjectGuid>
+    <ProjectGuid>683ba6de-01dc-4a1d-bc66-407b6baff78e</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Test123</RootNamespace>
     <AssemblyName>Test123</AssemblyName>
@@ -62,6 +63,18 @@
     <None Include="paket.template" />
     <Compile Include="DomainTypes.fs" />
     <Compile Include="Library.fs" />
+  <ItemGroup>
+    <Reference Include="FSharp.Core">
+      <Name>FSharp.Core</Name>
+      <AssemblyName>FSharp.Core.dll</AssemblyName>
+      <HintPath>$(MSBuildExtensionsPath32)\..\Reference Assemblies\Microsoft\FSharp\.NETCore\$(TargetFSharpCoreVersion)\FSharp.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Library.fs" />
+    <None Include="Script.fsx" />
+    <None Include="paket.references" />
+    <None Include="paket.template" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">12</MinimumVisualStudioVersion>
