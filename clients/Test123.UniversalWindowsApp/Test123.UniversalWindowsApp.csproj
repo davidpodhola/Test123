@@ -130,6 +130,8 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\Test123\Test123.fsproj">
       <Project>{9a2c0a9a-8464-4b2f-8cc9-b50436518bf3}</Project>
+      <Project>{73d8a58d-479d-4f25-bd7e-475483faa545}</Project>
+      <Project>{683ba6de-01dc-4a1d-bc66-407b6baff78e}</Project>
       <Name>Test123</Name>
     </ProjectReference>
   </ItemGroup>
