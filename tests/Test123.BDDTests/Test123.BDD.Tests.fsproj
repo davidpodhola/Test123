@@ -57,6 +57,9 @@
   </Target>
   -->
   <ItemGroup>
+    <Content Include="StockFeature.txt">
+      <Paket>True</Paket>
+    </Content>
     <Compile Include="StockStepDefinitions.fs">
       <Paket>True</Paket>
     </Compile>
@@ -70,6 +73,7 @@
     <Content Include="App.config" />
     <Compile Include="GreetingStepDefinitions.fs" />
     <Content Include="GreetingFeature.txt" />
+    <Content Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
